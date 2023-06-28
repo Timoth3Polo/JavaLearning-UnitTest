@@ -1,1 +1,4 @@
 test/target/*
+.idea
+test/.idea
+test/.env
