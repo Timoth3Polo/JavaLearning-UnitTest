@@ -9,7 +9,7 @@ import java.time.Instant;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class CalculatorTestWAssert {
+public class CalculatorWAssertTest {
 
     private static Instant startedAt;
 
