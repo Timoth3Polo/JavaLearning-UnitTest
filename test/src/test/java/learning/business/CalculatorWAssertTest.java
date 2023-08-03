@@ -5,6 +5,7 @@ import org.junit.jupiter.api.*;
 import java.text.MessageFormat;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.concurrent.TimeUnit;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -32,6 +33,7 @@ public class CalculatorWAssertTest {
         System.out.println("Appel avant tous les tests");
         startedAt = Instant.now();
 
+
     }
 
     @AfterAll
@@ -57,6 +59,7 @@ public class CalculatorWAssertTest {
     }
 
     @Test
+    @Timeout(value = 500, unit = TimeUnit.MILLISECONDS)
     public void should_return_15() {
         //Arrange
         Integer numberOne = 5;
